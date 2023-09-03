@@ -5,13 +5,11 @@
 
 ![ghjklz](https://github.com/molla202/Fleek-Network/assets/91562185/83355aab-fdc4-46c8-bbe4-14f2cc19e76b)
 
-
-
-
-
-* [Topluluk kanalımız](https://t.me/corenodechat)<br>
-* [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
-
+* [CoreNode Telegram](https://t.me/corenodechat)<br>
+* [CoreNode Twitter](https://twitter.com/corenodeHQ)<br>
+* [Fleek Network](https://fleek.network/)<br>
+* [Fleek Network Twitter](https://twitter.com/fleek_net)<br>
+* [Fleek Network DOC](https://docs.fleek.network/docs)<br>
 
 
  ## Sistem Gereksinimleri
