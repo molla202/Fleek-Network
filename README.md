@@ -37,7 +37,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.profile
 source ~/.cargo/env
 ```
-### 🤖 Protobuf Kuruyoruz
+### 🤖 Protobuf ve sccache Kuruyoruz
+```
+cargo install sccache
+```
 ```
 sudo apt-get install protobuf-compiler
 ```
