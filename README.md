@@ -73,3 +73,10 @@ lightning
 ```
 screen -ar light
 ```
+
+### Key dosyası yedekleme
+* Dosyalarınız bu konumda yer alıyor. ~/.ursa/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
+```
+nano ~/.ursa/config.toml
+```
+
