@@ -29,9 +29,6 @@ sudo apt update; sudo apt upgrade
 ```
 sudo apt install screen curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc
 ```
-```
-sudo apt-get install protobuf-compiler
-```
 ### Rustup kuruyoruz
 📡Not: 1 seçeceksiniz. daha önce kuruluysa kurmanıza gerek yok.
 ```
@@ -40,6 +37,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 source ~/.profile
 source ~/.cargo/env
+```
+### Protobuf Kuruyoruz
+```
+sudo apt-get install protobuf-compiler
 ```
 ### Docker kurulumu (gerekli değil kurmayın )
 ```bash
