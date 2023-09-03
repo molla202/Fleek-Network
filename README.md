@@ -20,16 +20,16 @@
 | Storage	| ~GB SSD |
 
 
-### Update edelim
+### 🏠 Update edelim
 ```bash
 sudo apt update; sudo apt upgrade 
 ```
-### Gerekli olanlar
+### 🤖 Gerekli olanlar
 ```
 sudo apt install screen curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc
 ```
-### Rustup kuruyoruz
-📡Not: 1 seçeceksiniz. daha önce kuruluysa kurmanıza gerek yok.
+### 🤖 Rustup kuruyoruz
+✏️ Not: 1 seçeceksiniz. daha önce kuruluysa kurmanıza gerek yok.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
@@ -37,7 +37,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.profile
 source ~/.cargo/env
 ```
-### Protobuf Kuruyoruz
+### 🤖 Protobuf Kuruyoruz
 ```
 sudo apt-get install protobuf-compiler
 ```
@@ -45,7 +45,7 @@ sudo apt-get install protobuf-compiler
 ```bash
 sudo apt-get update && sudo apt install jq git && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin 
 ```
-### `fleek-network/lightning.git` 'i klonluyoruz.
+### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
 git clone https://github.com/fleek-network/lightning.git
@@ -55,9 +55,9 @@ cd lightning
 make install
 ```
 * `make install` uzun sürer.
-* daha sonra version kontrol edin: `lightning --version`
+* daha sonra version kontrol edin: 📖`lightning --version`
 * version: `lightning 0.1.0`
-### Screen'de node'u çalıştıralım.
+### 🚀 Screen'de node'u çalıştıralım.
 ```
 screen -S light
 ```
