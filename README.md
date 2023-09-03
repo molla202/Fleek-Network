@@ -12,12 +12,12 @@
 * [Fleek Network DOC](https://docs.fleek.network/docs)<br>
 
 
- ## Sistem Gereksinimleri
+ ## 💻 Sistem Gereksinimleri
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
-| CPU |	4 |
-| RAM	| 8 GB |
-| Storage	| ~GB SSD |
+| ✔️ CPU |	4 |
+| ✔️ RAM	| 8 GB |
+| ✔️ Storage	| ~GB SSD |
 
 
 ### 🏠 Update edelim
@@ -56,7 +56,7 @@ make install
 ```
 * `make install` uzun sürer.
 * daha sonra version kontrol edin: 📖`lightning --version`
-* version: `lightning 0.1.0`
+* version: `lightning 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
 ```
 screen -S light
@@ -73,7 +73,7 @@ lightning
 screen -ar light
 ```
 
-### Key dosyası yedekleme
+### ♻️ Key dosyası yedekleme
 * Dosyalarınız bu konumda yer alıyor. ~/.lightning/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
 ```
 nano ~/.lightning/config.toml
