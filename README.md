@@ -17,7 +17,7 @@
 | ------------ | ------------ |
 | CPU |	4 |
 | RAM	| 8 GB |
-| Storage	| 250 GB SSD |
+| Storage	| ~GB SSD |
 
 
 ### Update edelim
