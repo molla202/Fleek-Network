@@ -22,6 +22,9 @@ show_title
     sudo apt update
     sudo apt upgrade -y
 
+    # Uyarı
+    echo -e "\n⚠️ Ekranda enter diyerek geçmeniz veya Y+enter demeniz gerekir"
+
     # Gerekli Paketler
     echo -e "\n🤖 Gerekli Paketler"
     sudo apt install screen curl tar wget jq build-essential make clang pkg-config libssl-dev cmake gcc -y
@@ -60,11 +63,12 @@ show_title
 
     # Node'u Screen'de Çalıştırma
     echo -e "\n🚀 Node'u Screen'de Çalıştırma"
-    screen -S light
-    cd $HOME/lightning
-    lightning
+    echo "screen -S light"
+    echo "cd $HOME/lightning"
+    echo "lightning"
     echo "Loglar akıyorsa her şey yolundadır."
     echo "Loglar aktıktan sonra CTRL + A + D ile çıkın."
     echo "Screen'e tekrar girmek için:"
     echo "screen -ar light"
+    echo "Screen Açılınca ekran kaybolacak.son kısıma github'dan bakın"
 } &> /dev/null
