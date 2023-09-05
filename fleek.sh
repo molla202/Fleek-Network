@@ -54,21 +54,37 @@ show_title
     echo -e "\n👷 fleek-network/lightning.git 'i klonluyoruz."
     echo "Not: make install komutu uzun sürebilir."
     cd $HOME
-    git clone https://github.com/fleek-network/lightning-node.git
-    cd lightning-node
-    make install
+    git clone https://github.com/fleek-network/lightning.git
+    cd lightning
+    cargo build
+    sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lightning
+    lightning keys generate
     echo "Daha sonra sürümünü kontrol edin:"
-    lightning-node --version
-    echo "version: lightning-node 0.1.0✅"
+    lightning --version
+    echo "version: lightning 0.1.0✅"
 
     # Node'u Screen'de Çalıştırma
     echo -e "\n🚀 Node'u Screen'de Çalıştırma"
-    echo "screen -S light"
-    echo "cd $HOME/lightning-node"
-    echo "lightning-node"
-    echo "Loglar akıyorsa her şey yolundadır."
-    echo "Loglar aktıktan sonra CTRL + A + D ile çıkın."
-    echo "Screen'e tekrar girmek için:"
-    echo "screen -ar light"
-    echo "Screen Açılınca ekran kaybolacak.son kısıma github'dan bakın"
+    sudo tee /etc/systemd/system/lightning.service > /dev/null <<EOF
+    [Unit]
+    Description=Fleek Network Node lightning service
+    
+    [Service]
+    User=lgtn
+    Type=simple
+    MemoryHigh=32G
+    RestartSec=15s
+    Restart=always
+    ExecStart=lgtn -c /$HOME/lightning.toml run
+    StandardOutput=append:/var/log/lightning/output.log
+    StandardError=append:/var/log/lightning/diagnostic.log
+    
+    [Install]
+    WantedBy=multi-user.target
+    EOF
+    
+    
+    sudo systemctl daemon-reload
+    sudo systemctl enable lightning
+    sudo systemctl restart lightning
 } &> /dev/null
