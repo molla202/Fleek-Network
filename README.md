@@ -71,6 +71,7 @@ sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lightn
 ```
 lightning keys generate
 ```
+```
 screen -S light
 ```
 ```
