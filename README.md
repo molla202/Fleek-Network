@@ -76,7 +76,11 @@ screen -S light
 ```
 ```
 cd $HOME
-cd lightning 
+```
+```
+cd lightning
+```
+```
 lightning run
 ```
 * Loglar akıyorsa sorun yok.
