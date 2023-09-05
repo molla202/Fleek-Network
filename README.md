@@ -58,15 +58,16 @@ cd lightning
 ```
 cargo +stable build
 ```
-* `make install` uzun sürer.
-* daha sonra version kontrol edin: 📖`lightning --version`
-* version: `lightning 0.1.0`✅
+```
+sudo ln -s "$HOME/lightning/target/debug/lightning-node" /usr/local/bin/lgtn
+```
+* `cargo +stable build` uzun sürer.
+* daha sonra version kontrol edin: 📖`lgtn --version`
+* version: `lightning-node 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
+
 ```
-sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lightning
-```
-```
-lightning keys generate
+lgtn keys generate
 ```
 ```
 screen -S light
@@ -78,7 +79,7 @@ cd $HOME
 cd lightning
 ```
 ```
-lightning run
+lgtn run
 ```
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
