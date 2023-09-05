@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Ana Başlık
 function show_title {
     echo -e "\n============================================="
