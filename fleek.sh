@@ -54,18 +54,18 @@ show_title
     echo -e "\n👷 fleek-network/lightning.git 'i klonluyoruz."
     echo "Not: make install komutu uzun sürebilir."
     cd $HOME
-    git clone https://github.com/fleek-network/lightning.git
-    cd lightning
+    git clone https://github.com/fleek-network/lightning-node.git
+    cd lightning-node
     make install
     echo "Daha sonra sürümünü kontrol edin:"
-    lightning --version
-    echo "version: lightning 0.1.0✅"
+    lightning-node --version
+    echo "version: lightning-node 0.1.0✅"
 
     # Node'u Screen'de Çalıştırma
     echo -e "\n🚀 Node'u Screen'de Çalıştırma"
     echo "screen -S light"
-    echo "cd $HOME/lightning"
-    echo "lightning"
+    echo "cd $HOME/lightning-node"
+    echo "lightning-node"
     echo "Loglar akıyorsa her şey yolundadır."
     echo "Loglar aktıktan sonra CTRL + A + D ile çıkın."
     echo "Screen'e tekrar girmek için:"
