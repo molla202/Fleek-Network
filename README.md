@@ -81,6 +81,9 @@ cd lightning
 ```
 lgtn run
 ```
+![image](https://github.com/molla202/Fleek-Network/assets/91562185/d9ac7ef6-ba60-4952-a52d-c2a8cb92ae31)
+
+* discord üzerinden işlem yapmamız gerekiyor şuan aktif değil detayları paylaşacağız.
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
 * Screen'e Tekrar Girmek için
