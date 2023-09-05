@@ -23,10 +23,7 @@
 ```
 curl https://get.fleek.network | bash
 ```
-## OTO Kurulum.
-```
-curl -o fleek.sh -fsSL https://raw.githubusercontent.com/molla202/Fleek-Network/main/fleek.sh && chmod +x fleek.sh && ./fleek.sh
-```
+
 ### 🏠 Update edelim
 ```bash
 sudo apt update; sudo apt upgrade 
@@ -56,7 +53,7 @@ sudo apt-get install protobuf-compiler
 ```
 cd $HOME 
 git clone https://github.com/fleek-network/lightning-node.git
-cd lightning-node
+cd lightning
 ```
 ```
 cargo +stable build
