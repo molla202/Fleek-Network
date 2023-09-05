@@ -19,6 +19,10 @@
 | ✔️ RAM	| 8 GB |
 | ✔️ Storage	| ~GB SSD |
 
+### RESMİ OTO KURULUM UBUNTU 22 HERSEY DAHİL
+```
+curl https://get.fleek.network | bash
+```
 ## OTO Kurulum.
 ```
 curl -o fleek.sh -fsSL https://raw.githubusercontent.com/molla202/Fleek-Network/main/fleek.sh && chmod +x fleek.sh && ./fleek.sh
@@ -55,19 +59,24 @@ git clone https://github.com/fleek-network/lightning-node.git
 cd lightning-node
 ```
 ```
-make install
+cargo +stable build
 ```
 * `make install` uzun sürer.
-* daha sonra version kontrol edin: 📖`lightning-node --version`
-* version: `lightning-node 0.1.0`✅
+* daha sonra version kontrol edin: 📖`lightning --version`
+* version: `lightning 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
+```
+sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lightning
+```
+```
+lightning keys generate
 ```
 screen -S light
 ```
 ```
 cd $HOME
-cd lightning-node 
-lightning-node
+cd lightning 
+lightning run
 ```
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
@@ -77,8 +86,8 @@ screen -ar light
 ```
 
 ### ♻️ Key dosyası yedekleme
-* Dosyalarınız bu konumda yer alıyor. ~/.lightning-node/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
+* Dosyalarınız bu konumda yer alıyor. ~/.lightning/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
 ```
-nano ~/.lightning-node/config.toml
+nano ~/.lightning/config.toml
 ```
 
