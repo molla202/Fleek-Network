@@ -47,30 +47,27 @@ cargo install sccache
 ```
 sudo apt-get install protobuf-compiler
 ```
-### Docker kurulumu (gerekli değil kurmayın )
-```bash
-sudo apt-get update && sudo apt install jq git && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin 
-```
+
 ### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
-git clone https://github.com/fleek-network/lightning.git
-cd lightning
+git clone https://github.com/fleek-network/lightning-node.git
+cd lightning-node
 ```
 ```
 make install
 ```
 * `make install` uzun sürer.
-* daha sonra version kontrol edin: 📖`lightning --version`
-* version: `lightning 0.1.0`✅
+* daha sonra version kontrol edin: 📖`lightning-node --version`
+* version: `lightning-node 0.1.0`✅
 ### 🚀 Screen'de node'u çalıştıralım.
 ```
 screen -S light
 ```
 ```
 cd $HOME
-cd lightning 
-lightning
+cd lightning-node 
+lightning-node
 ```
 * Loglar akıyorsa sorun yok.
 * Loglar aktıktan sonra CTRL + A + D ile çıkın.
@@ -80,8 +77,8 @@ screen -ar light
 ```
 
 ### ♻️ Key dosyası yedekleme
-* Dosyalarınız bu konumda yer alıyor. ~/.lightning/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
+* Dosyalarınız bu konumda yer alıyor. ~/.lightning-node/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
 ```
-nano ~/.lightning/config.toml
+nano ~/.lightning-node/config.toml
 ```
 
