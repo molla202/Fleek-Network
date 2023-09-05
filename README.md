@@ -91,7 +91,7 @@ screen -ar light
 ```
 
 ### ♻️ Key dosyası yedekleme
-* Dosyalarınız bu konumda yer alıyor. ~/.lightning/keystore  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
+* Dosyalarınız bu konumda yer alıyor. ``~/.lightning/keystore``  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
 ```
 nano ~/.lightning/config.toml
 ```
