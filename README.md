@@ -23,6 +23,10 @@
 ```
 curl https://get.fleek.network | bash
 ```
+NOT: eğer ilk kurup waitlist onaylandıysa alttan update edin...
+```
+curl https://get.fleek.network/update | bash
+```
 
 ### 🏠 Update edelim
 ```bash
@@ -125,4 +129,3 @@ tail -f /var/log/lightning/diagnostic.log
 ```
 nano ~/.lightning/config.toml
 ```
-
