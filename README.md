@@ -48,7 +48,13 @@ cargo install sccache
 ```
 sudo apt-get install protobuf-compiler
 ```
-
+### diski ram oalrka kullanalım kurarken hata vermesin diye
+```
+sudo fallocate -l 10240M /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
 ### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
