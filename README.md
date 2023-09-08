@@ -83,28 +83,29 @@ lgtn keys generate
 ### servis olarak çalıştıralım...
 ```
 sudo tee /etc/systemd/system/lightning.service > /dev/null <<EOF
-    [Unit]
-    Description=Fleek Network Node lightning service
+[Unit]
+Description=Fleek Network Node lightning service
     
-    [Service]
-    User=root
-    Type=simple
-    MemoryHigh=32G
-    RestartSec=15s
-    Restart=always
-    ExecStart=lgtn -c /$HOME/lightning.toml run
-    StandardOutput=append:/var/log/lightning/output.log
-    StandardError=append:/var/log/lightning/diagnostic.log
+[Service]
+User=root
+Type=simple
+MemoryHigh=32G
+RestartSec=15s
+Restart=always
+ExecStart=lgtn -c /$HOME/lightning.toml run
+StandardOutput=append:/var/log/lightning/output.log
+StandardError=append:/var/log/lightning/diagnostic.log
     
-    [Install]
-    WantedBy=multi-user.target
-    EOF
-
-
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+```
 sudo mkdir -p /var/log/lightning
 sudo touch /var/log/lightning/output.log
 sudo touch /var/log/lightning/diagnostic.log
-
+```
+```
 sudo systemctl daemon-reload
 sudo systemctl enable lightning
 sudo systemctl restart lightning
