@@ -119,6 +119,8 @@ sudo systemctl status lightning.service
 ```
 tail -f /var/log/lightning/output.log
 ```
+![image](https://github.com/molla202/Fleek-Network/assets/91562185/c641da48-87f1-4eec-810f-56d2c7b67b51)
+
 ```
 tail -f /var/log/lightning/diagnostic.log
 ```
