@@ -52,14 +52,14 @@ sudo apt-get install protobuf-compiler
 ### 👷 `fleek-network/lightning.git` 'i klonluyoruz.
 ```
 cd $HOME 
-git clone https://github.com/fleek-network/lightning-node.git
+git clone -b testnet-alpha-0 https://github.com/fleek-network/lightning.git ~/lightning
 cd lightning
 ```
 ```
 cargo run -- keys generate
 ```
 ```
-sudo ln -s "$HOME/lightning/target/debug/lightning-node" /usr/local/bin/lgtn
+sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lgtn
 ```
 * `cargo +stable build` uzun sürer. hata verirse tekrar gir hata vermeyeseye kadar.
 * daha sonra version kontrol edin: 📖`lgtn --version`
