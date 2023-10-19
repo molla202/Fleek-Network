@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1>Fleek-Network </h1>
+  <h1>Fleek-Network Testnet-alpha-1 </h1>
 </div>
 
 ![image](https://github.com/Core-Node-Team/Testnet-TR/assets/91562185/74fad132-3c1f-4bf8-a90a-9afa5cba3f64)
