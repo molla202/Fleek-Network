@@ -21,6 +21,13 @@
 | ✔️ Storage	| ~GB SSD |
 
 ### RESMİ OTO KURULUM UBUNTU 22 HERSEY DAHİL
+
+```
+sudo fallocate -l 10240M /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
 ```
 adduser lgtn
 ```
@@ -30,12 +37,7 @@ usermod -aG sudo lgtn
 ```
 su lgtn
 ```
-```
-sudo fallocate -l 10240M /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-```
+
 ```
 curl https://get.fleek.network | bash
 ```
