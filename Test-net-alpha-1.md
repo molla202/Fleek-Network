@@ -39,18 +39,9 @@ sudo swapon /swapfile
 ```
 curl https://get.fleek.network | bash
 ```
-NOT: eğer ilk kurup waitlist onaylandıysa alttan update edin...
-```
-curl https://get.fleek.network/update | bash
-```
 NOT: ekranda gözükmesse keyler...
 ```
 lgtn keys show
-```
-```
-sudo systemctl daemon-reload
-sudo systemctl enable lightning
-sudo systemctl restart lightning
 ```
 ### durumuna bakalım...
 ```
@@ -117,9 +108,6 @@ cargo +stable build --release
 sudo rm -f "/usr/local/bin/lgtn"
 sudo ln -s "$HOME/lightning/target/release/lightning-node" /usr/local/bin/lgtn
 ```
-* `cargo +stable build` uzun sürer. hata verirse tekrar gir hata vermeyeseye kadar.
-* daha sonra version kontrol edin: 📖`lgtn --version`
-* version: `lightning-node 0.1.0`✅
 ### 🚀 key alma işlemi...
 
 ```
@@ -171,8 +159,6 @@ tail -f /var/log/lightning/output.log
 ```
 tail -f /var/log/lightning/diagnostic.log
 ```
-
-* NOT: arkadaslar vaziyet çok karışık :D bi whitelist mevzusu var evet publicteyiz ama var neyse çok karıştırmışlar herşeyi birbirine düzelecektir. discord üzerinden whitelist işlemini onaylatırsak olacak dalga dalga olaucak dıyorlar.
 
 ### ♻️ Key dosyası yedekleme
 * Dosyalarınız bu konumda yer alıyor. ``~/.lightning/keystore``  yedekleyiniz.alttaki kod port değişikliği için deneyeceğiz :D
