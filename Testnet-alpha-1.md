@@ -63,8 +63,6 @@ tail -f /var/log/lightning/output.log
 tail -f /var/log/lightning/diagnostic.log
 ```
 
-* NOT: arkadaslar vaziyet çok karışık :D bi whitelist mevzusu var evet publicteyiz ama var neyse çok karıştırmışlar herşeyi birbirine düzelecektir. discord üzerinden whitelist işlemini onaylatırsak olacak dalga dalga olaucak dıyorlar.
-
 # MANUEL KURULUM....
 ### 🏠 Update edelim
 ```bash
