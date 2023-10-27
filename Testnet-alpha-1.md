@@ -20,6 +20,17 @@
 | ✔️ RAM	| 16 GB |
 | ✔️ Storage	| ~GB SSD |
 
+
+### Silme manuel için
+```
+sudo systemctl stop lightning
+rm -rf /var/log/lightning/output.log
+rm -rf /var/log/lightning/diagnostic.log
+rm -rf ~/lightning
+rm -rf ~/.lightning
+sudo systemctl disable lightning
+rm -rf /etc/systemd/system/lightning.service
+```
 ### RESMİ OTO KURULUM UBUNTU 22 HERSEY DAHİL
 
 ```
